@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <rect width="512" height="512" rx="128" fill="#050505"/>
+    
+    <text x="256" y="345" font-family="system-ui, sans-serif" font-size="240" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-10">
+        SKS<tspan fill="#00f2ea">.</tspan>
+    </text>
+</svg>

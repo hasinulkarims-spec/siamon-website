@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Somon Karim Siamon | Full-Stack Architect & Supply Chain Strategist</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png?v=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=1">
+    
+    <meta name="title" content="Somon Karim Siamon | Digital Portfolio">
+    <meta name="description" content="Portfolio of Somon Karim Siamon, a Full-Stack Web Architect and Supply Chain Strategist based in Dhaka, Bangladesh. BBA student at East West University.">
+    <meta name="keywords" content="Somon Karim Siamon, Full-Stack Developer, PHP, Laravel, React, Supply Chain, Logistics, East West University, Web Architect, Bangladesh, Aquawrist">
+    <meta name="author" content="Somon Karim Siamon">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siamon.fromrejected.com/">
+    <meta property="og:title" content="Somon Karim Siamon | Digital Portfolio">
+    <meta property="og:description" content="Full-Stack Architect • Supply Chain Strategist • BBA @ EWU. Explore my digital ventures and logistics projects.">
+    <meta property="og:image" content="https://siamon.fromrejected.com/WhatsApp%20Image%202026-04-18%20at%2021.42.22.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://siamon.fromrejected.com/">
+    <meta property="twitter:title" content="Somon Karim Siamon | Digital Portfolio">
+    <meta property="twitter:description" content="Full-Stack Architect • Supply Chain Strategist • BBA @ EWU. Explore my digital ventures and logistics projects.">
+    <meta property="twitter:image" content="https://siamon.fromrejected.com/WhatsApp%20Image%202026-04-18%20at%2021.42.22.jpg">
+
+    <link rel="canonical" href="https://siamon.fromrejected.com/" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Somon Karim Siamon",
+      "alternateName": "Siamon Karim",
+      "url": "https://siamon.fromrejected.com/",
+      "image": "https://siamon.fromrejected.com/WhatsApp%20Image%202026-04-18%20at%2021.42.22.jpg",
+      "jobTitle": "Full-Stack Architect & Supply Chain Strategist",
+      "description": "Full-Stack Web Developer and Supply Chain Strategist specializing in PHP, Laravel, React, and e-commerce logistics.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "East West University"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhaka",
+        "addressCountry": "Bangladesh"
+      },
+      "knowsAbout": ["Supply Chain Management", "PHP", "Laravel", "React", "Web Architecture", "Logistics", "E-commerce"],
+      "sameAs": [
+        "https://wa.me/8801788588266"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        header: ['Montserrat', 'sans-serif'],
+                        mono: ['Courier New', 'Courier', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#050505',
+                        card: '#121212',
+                        accent: '#00f2ea', 
+                        secondary: '#ff0055', 
+                        whatsapp: '#25D366',
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite alternate cubic-bezier(0.4, 0, 0.2, 1)',
+                        'grid-fade': 'gridFade 20s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'gradient-flow': 'gradientFlow 4s ease infinite',
+                        'loading-bar': 'loadingBar 1.5s cubic-bezier(0.65, 0, 0.35, 1) forwards',
+                        'modal-up': 'modalUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'marquee': 'marquee 30s linear infinite',
+                        'marquee2': 'marquee2 30s linear infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate3d(0px, 0px, 0) scale(1)' },
+                            '100%': { transform: 'translate3d(30px, -50px, 0) scale(1.1)' },
+                        },
+                        gridFade: {
+                            '0%': { backgroundPosition: '0 0' },
+                            '100%': { backgroundPosition: '50px 50px' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
+                            '50%': { transform: 'translate3d(0, -15px, 0)' },
+                        },
+                        gradientFlow: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' },
+                        },
+                        loadingBar: {
+                            '0%': { transform: 'scaleX(0)' },
+                            '100%': { transform: 'scaleX(1)' },
+                        },
+                        modalUp: {
+                            '0%': { transform: 'translateY(40px) scale(0.95)', opacity: 0 },
+                            '100%': { transform: 'translateY(0) scale(1)', opacity: 1 },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        },
+                        marquee2: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(0%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #050505; color: #e5e5e5; overflow-x: hidden; }
+        .content-vis-auto { content-visibility: auto; contain-intrinsic-size: 1000px; }
+
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px;
+            background: linear-gradient(to right, #00f2ea, #ff0055);
+            z-index: 9999; width: 0%; transition: width 0.1s ease-out;
+        }
+
+        /* Matrix Canvas */
+        #matrix-canvas {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: 9998; pointer-events: none; opacity: 0; transition: opacity 1s ease-in-out;
+        }
+
+        @media (pointer: fine) {
+            body, a, button, iframe, input, textarea, .cursor-pointer { cursor: none !important; }
+            .cursor-dot {
+                position: fixed; top: 0; left: 0; width: 6px; height: 6px;
+                background-color: #00f2ea; border-radius: 50%; z-index: 10000;
+                pointer-events: none; transform: translate3d(-50%, -50%, 0); box-shadow: 0 0 10px #00f2ea;
+            }
+            .cursor-outline {
+                position: fixed; top: 0; left: 0; width: 34px; height: 34px;
+                border: 1px solid rgba(255, 0, 85, 0.6); border-radius: 50%; z-index: 9999;
+                pointer-events: none; transform: translate3d(-50%, -50%, 0);
+                transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+            }
+            body.cursor-hover-active .cursor-outline {
+                width: 55px; height: 55px; background-color: rgba(0, 242, 234, 0.1); border-color: #00f2ea;
+            }
+        }
+        
+        #preloader { transition: opacity 0.6s cubic-bezier(0.65, 0, 0.35, 1), visibility 0.6s; }
+
+        .bg-grid {
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+        }
+        
+        .glass {
+            background: rgba(18, 18, 18, 0.65); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        .glass-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+        .glass-card:hover { border-color: rgba(0, 242, 234, 0.3); transform: translate3d(0, -5px, 0); }
+        
+        .gradient-text {
+            background: linear-gradient(270deg, #00f2ea, #ff0055, #00f2ea); background-size: 200% auto;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        
+        .name-glow { transition: text-shadow 0.4s ease, transform 0.4s ease; }
+        .name-glow:hover { text-shadow: 0 0 30px rgba(0, 242, 234, 0.3), 0 0 60px rgba(255, 0, 85, 0.2); transform: scale(1.02) translate3d(0,0,0); }
+
+        /* Responsive Blob Sizes & Blurs */
+        .blob-shape { position: absolute; filter: blur(50px); opacity: 0.35; border-radius: 50%; }
+        @media (min-width: 768px) {
+            .blob-shape { filter: blur(90px); }
+        }
+
+        .live-preview-container iframe {
+            width: 400%; height: 400%; transform: scale(0.25) translateZ(0); 
+            transform-origin: top left; pointer-events: none; border: none;
+        }
+        body.modal-open { overflow: hidden; }
+
+        @media (pointer: fine) {
+            .js-tilt {
+                transform-style: preserve-3d;
+                transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            .js-tilt > * { transform: translateZ(30px); }
+        }
+    </style>
+</head>
+<body class="relative antialiased selection:bg-accent selection:text-black">
+
+    <div id="scroll-progress"></div>
+    <div class="cursor-dot hidden md:block"></div>
+    <div class="cursor-outline hidden md:block"></div>
+
+    <canvas id="matrix-canvas" class="hidden"></canvas>
+
+    <div id="preloader" class="fixed inset-0 z-[100] bg-dark flex flex-col items-center justify-center">
+        <div class="relative flex flex-col items-center">
+            <h1 class="font-header font-black text-5xl md:text-7xl tracking-tighter text-white animate-pulse mb-6 cursor-interactable">
+                SKS<span class="text-accent">.</span>
+            </h1>
+            <div class="w-48 h-1 bg-white/10 rounded-full overflow-hidden">
+                <div class="h-full bg-gradient-to-r from-accent to-secondary w-full origin-left animate-loading-bar"></div>
+            </div>
+            <p class="text-gray-500 text-xs tracking-widest uppercase mt-4 font-sans font-medium">Initializing Systems</p>
+        </div>
+    </div>
+
+    <div class="fixed inset-0 z-[-2] bg-dark"></div>
+    <div class="fixed inset-0 z-[-1] bg-grid animate-grid-fade pointer-events-none"></div>
+    <div class="fixed inset-0 z-[-3] overflow-hidden pointer-events-none">
+        <div class="blob-shape bg-accent w-64 h-64 md:w-[30rem] md:h-[30rem] top-[-5%] left-[-5%] md:top-[-10%] md:left-[-10%] animate-blob absolute"></div>
+        <div class="blob-shape bg-secondary w-64 h-64 md:w-[30rem] md:h-[30rem] bottom-[-5%] right-[-5%] md:bottom-[-10%] md:right-[-10%] animate-blob absolute" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="fixed bottom-6 left-6 z-[60] glass px-4 py-3 rounded-xl border border-white/10 shadow-lg hidden md:flex flex-col gap-1 cursor-interactable pointer-events-auto">
+        <div class="flex items-center gap-2">
+            <i class="fa-regular fa-clock text-accent text-sm"></i>
+            <span id="telemetry-time" class="text-white font-mono font-bold text-sm tracking-wider">--:-- BST</span>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-medium text-gray-400">
+            <span id="telemetry-status" class="tracking-wide">Initializing Telemetry...</span>
+        </div>
+    </div>
+
+    <div id="project-modal" class="fixed inset-0 z-[150] hidden flex items-center justify-center p-4 md:p-6 opacity-0 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-md cursor-interactable" onclick="closeModal()"></div>
+        <div class="glass relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl border border-white/10 shadow-2xl z-10 hidden" id="modal-card">
+            <button onclick="closeModal()" class="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors cursor-interactable z-20">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="p-8 md:p-12">
+                <div class="mb-8">
+                    <h2 id="modal-title" class="font-header text-4xl md:text-5xl font-black text-white mb-2">Project Title</h2>
+                    <p id="modal-category" class="text-accent tracking-widest uppercase text-sm font-bold mb-6">Category</p>
+                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-8"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-xl font-bold text-white border-b border-white/10 pb-2 mb-4">The Challenge</h3>
+                        <p id="modal-challenge" class="text-gray-400 font-light leading-relaxed mb-8"></p>
+                        <h3 class="text-xl font-bold text-white border-b border-white/10 pb-2 mb-4">Architecture</h3>
+                        <p id="modal-architecture" class="text-gray-400 font-light leading-relaxed"></p>
+                    </div>
+                    <div class="flex flex-col justify-center bg-card/50 rounded-xl p-8 border border-white/5 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <i id="modal-icon" class="fa-solid fa-code text-6xl text-white/20 mb-6 text-center group-hover:text-white/40 transition-colors"></i>
+                        <h4 class="text-center text-white font-bold mb-2">Ready to explore?</h4>
+                        <p class="text-center text-gray-500 text-sm mb-8">Experience the live production environment.</p>
+                        <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="cursor-interactable w-full py-4 glass border border-accent/50 text-accent font-bold rounded hover:bg-accent hover:text-black transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_15px_rgba(0,242,234,0.1)]">
+                            Launch Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 glass top-0 border-b border-white/5 mt-[3px]">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-header font-bold text-2xl tracking-tighter hover:scale-105 transition-transform duration-300 cursor-interactable">
+                SKS<span class="text-accent">.</span>
+            </a>
+            <div class="hidden md:flex space-x-10 text-sm font-semibold tracking-widest text-gray-300">
+                <a href="#about" class="hover:text-accent transition-colors duration-300 cursor-interactable">ABOUT</a>
+                <a href="#experience" class="hover:text-accent transition-colors duration-300 cursor-interactable">EXPERIENCE</a>
+                <a href="#projects" class="hover:text-accent transition-colors duration-300 cursor-interactable">PROJECTS</a>
+                <a href="#skills" class="hover:text-accent transition-colors duration-300 cursor-interactable">SKILLS</a>
+            </div>
+            <a href="#terminal-section" class="px-6 py-2 border border-accent text-accent hover:bg-accent hover:text-black transition-all duration-300 rounded-full text-sm font-bold tracking-wide shadow-[0_0_15px_rgba(0,242,234,0.2)] hover:shadow-[0_0_25px_rgba(0,242,234,0.5)] cursor-interactable">
+                TERMINAL
+            </a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center relative pt-20 pb-10">
+        <div class="text-center px-6 z-10" data-aos="zoom-in" data-aos-duration="1200">
+            <div class="inline-block mb-8 px-4 py-1 rounded-full border border-white/10 glass cursor-interactable">
+                <p class="text-accent font-bold tracking-[0.3em] text-xs">EST. 2002</p>
+            </div>
+            <div class="animate-float name-glow inline-block cursor-interactable">
+                <h1 class="font-header text-6xl md:text-8xl lg:text-9xl font-black mb-6 leading-none tracking-tighter">
+                    <span class="text-white drop-shadow-lg">SOMON KARIM</span><br> 
+                    <span class="gradient-text animate-gradient-flow inline-block mt-2">SIAMON</span>
+                </h1>
+            </div>
+            <p class="text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10 font-light tracking-wide mt-4">
+                Full-Stack Architect • Supply Chain Strategist • BBA @ EWU
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="#projects" class="cursor-interactable px-8 py-4 bg-white text-black font-bold rounded-sm hover:bg-gray-200 transition-colors duration-300 w-full sm:w-auto text-center">Explore Portfolio</a>
+                <a href="#terminal-section" class="cursor-interactable px-8 py-4 glass border border-white/20 font-bold rounded-sm hover:border-accent hover:text-accent transition-all duration-300 flex items-center justify-center gap-3 w-full sm:w-auto group">
+                    <i class="fa-solid fa-terminal text-xl group-hover:scale-110 transition-transform"></i> Run Contact.sh
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative flex overflow-x-hidden border-y border-white/5 bg-card/40 py-6 mb-20 z-10 backdrop-blur-sm cursor-interactable">
+        <div class="animate-marquee whitespace-nowrap flex gap-12 items-center px-6">
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-php text-accent mr-2"></i>PHP 8+</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-laravel text-accent mr-2"></i>LARAVEL</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-react text-accent mr-2"></i>REACT</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-truck-fast text-accent mr-2"></i>SCM LOGISTICS</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-database text-accent mr-2"></i>SQLITE & MYSQL</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-shirt text-accent mr-2"></i>DTF PRINT TECH</span><span class="text-secondary">•</span>
+        </div>
+        <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex gap-12 items-center px-6 py-6">
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-php text-accent mr-2"></i>PHP 8+</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-laravel text-accent mr-2"></i>LARAVEL</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-brands fa-react text-accent mr-2"></i>REACT</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-truck-fast text-accent mr-2"></i>SCM LOGISTICS</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-database text-accent mr-2"></i>SQLITE & MYSQL</span><span class="text-secondary">•</span>
+            <span class="text-xl font-bold text-white/50 tracking-widest"><i class="fa-solid fa-shirt text-accent mr-2"></i>DTF PRINT TECH</span><span class="text-secondary">•</span>
+        </div>
+    </div>
+
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right" class="js-tilt cursor-interactable relative group mx-auto w-full max-w-md lg:max-w-full">
+                <div class="relative w-full h-full rounded-xl overflow-visible">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-accent to-secondary transform translate-x-4 translate-y-4 rounded-xl blur-md opacity-50 transition-all duration-700 -z-10"></div>
+                    <img src="WhatsApp Image 2026-04-18 at 21.42.22.jpg" alt="Portrait of Somon Karim Siamon, Full-Stack Developer and EWU BBA Student in Dhaka" class="w-full h-auto object-cover rounded-xl border border-white/10 bg-card grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-6 -left-6 glass p-4 rounded-lg border-l-4 border-accent shadow-2xl hidden md:block" style="transform: translateZ(50px);">
+                        <p class="text-xs text-gray-400 uppercase tracking-widest mb-1">Current Base</p>
+                        <p class="font-bold text-white flex items-center gap-2"><i class="fa-solid fa-location-dot text-accent"></i> Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <div class="flex items-center gap-4 mb-6 cursor-interactable">
+                    <div class="h-[2px] w-12 bg-accent"></div>
+                    <h2 class="font-header text-4xl md:text-5xl font-black uppercase tracking-tight">The <span class="gradient-text animate-gradient-flow">Architect</span></h2>
+                </div>
+                <p class="text-gray-300 mb-6 text-lg leading-relaxed font-light">
+                    I am a BBA student at <strong class="text-white font-medium cursor-interactable">East West University</strong> operating at the dynamic intersection of business logistics and digital engineering. From optimizing physical supply chains in Moulovi Bazar to building robust, production-ready web architectures with PHP and Laravel, I design systems that scale.
+                </p>
+                <p class="text-gray-400 mb-10 leading-relaxed">
+                    My vision is rooted in data-driven strategy and forward-thinking development. Whether I'm managing logistics for high-weight DTF apparel or structuring complex databases for digital media portals, I believe in bridging the gap between traditional commerce and modern technology through precision and execution.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="cursor-interactable p-5 glass rounded-lg border-l-2 border-accent hover:bg-white/5 transition-colors">
+                        <i class="fa-solid fa-graduation-cap text-accent mb-3 text-xl"></i>
+                        <h3 class="font-bold text-lg text-white mb-1">Academics</h3>
+                        <p class="text-sm text-gray-400">BBA @ EWU</p>
+                    </div>
+                    <div class="cursor-interactable p-5 glass rounded-lg border-l-2 border-secondary hover:bg-white/5 transition-colors">
+                        <i class="fa-solid fa-network-wired text-secondary mb-3 text-xl"></i>
+                        <h3 class="font-bold text-lg text-white mb-1">Logistics & Tech</h3>
+                        <p class="text-sm text-gray-400">Supply Chain & Full-Stack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-card/40 border-y border-white/5 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-header text-4xl md:text-5xl font-black mb-4 cursor-interactable">Digital <span class="gradient-text animate-gradient-flow">Ventures</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A selection of my recent e-commerce, media, and development projects. Click to view architecture details.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div onclick="openModal('aquawrist')" class="js-tilt cursor-interactable project-card cursor-pointer group relative overflow-hidden rounded-xl h-[400px] block border border-white/10 bg-card" data-aos="fade-up">
+                    <div class="live-preview-container absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity duration-700 pointer-events-none hidden md:block">
+                        <iframe src="https://aquawrist.fromrejected.com" title="Aquawrist Preview" loading="lazy" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="font-header text-3xl font-black mb-2 text-white group-hover:text-accent transition-colors">Aquawrist</h3>
+                                <p class="text-gray-300 mb-4 font-light">Premium Watch Brand Platform</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs bg-dark/50 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full text-white">E-Commerce</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-accent text-black flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="openModal('belasheshe')" class="js-tilt cursor-interactable project-card cursor-pointer group relative overflow-hidden rounded-xl h-[400px] block border border-white/10 bg-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="live-preview-container absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity duration-700 pointer-events-none hidden md:block">
+                        <iframe src="https://flusso.fromrejected.com" title="Bela Sheshe Preview" loading="lazy" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="font-header text-3xl font-black mb-2 text-white group-hover:text-secondary transition-colors">বেলা শেষে</h3>
+                                <p class="text-gray-300 mb-4 font-light">Digital News Portal & Crawler</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs bg-dark/50 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full text-white">Laravel / PHP</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="openModal('astro')" class="js-tilt cursor-interactable project-card cursor-pointer group relative overflow-hidden rounded-xl h-[400px] block border border-white/10 bg-card" data-aos="fade-up">
+                    <div class="live-preview-container absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity duration-700 pointer-events-none hidden md:block">
+                        <iframe src="https://astro.fromrejected.com" title="Astro Preview" loading="lazy" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="font-header text-3xl font-black mb-2 text-white group-hover:text-purple-400 transition-colors">Astro</h3>
+                                <p class="text-gray-300 mb-4 font-light">Astronomical & Chinese Zodiac Tech</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs bg-dark/50 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full text-white">Web Dev</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-purple-500 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="openModal('slotshots')" class="js-tilt cursor-interactable project-card cursor-pointer group relative overflow-hidden rounded-xl h-[400px] block border border-white/10 bg-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="live-preview-container absolute inset-0 z-0 opacity-40 group-hover:opacity-70 transition-opacity duration-700 pointer-events-none hidden md:block">
+                        <iframe src="https://slotshots.fromrejected.com" title="SlotShots Preview" loading="lazy" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 pointer-events-none">
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <h3 class="font-header text-3xl font-black mb-2 text-white group-hover:text-yellow-400 transition-colors">SlotShots</h3>
+                                <p class="text-gray-300 mb-4 font-light">Apparel, DTF Printing & Branding</p>
+                                <div class="flex gap-2">
+                                    <span class="text-xs bg-dark/50 backdrop-blur-md border border-white/20 px-3 py-1 rounded-full text-white">Apparel Design</span>
+                                </div>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-yellow-400 text-black flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content-vis-auto">
+        <section id="experience" class="py-24 relative z-10">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="font-header text-4xl md:text-5xl font-black mb-16 text-center cursor-interactable">Path & <span class="text-secondary">Progress</span></h2>
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-6 group cursor-interactable" data-aos="fade-up">
+                        <div class="md:w-1/3 md:text-right">
+                            <h3 class="text-xl font-bold text-accent mb-1">Retail & SCM Core</h3>
+                            <p class="text-gray-500 text-sm font-medium">Moulovi Bazar</p>
+                        </div>
+                        <div class="md:w-2/3 border-l-2 border-white/10 pl-8 pb-4 relative group-hover:border-accent transition-colors duration-500">
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-dark border-2 border-accent rounded-full group-hover:bg-accent transition-colors duration-500 shadow-[0_0_10px_rgba(0,242,234,0.5)]"></div>
+                            <p class="text-gray-300 leading-relaxed">Gained critical, hands-on experience in the heart of Bangladesh's trading hub. Managed procurement, analyzed retail trends, and coordinated nationwide shipping logistics to establish a firm grounding in grassroots Supply Chain Management.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group cursor-interactable" data-aos="fade-up">
+                        <div class="md:w-1/3 md:text-right">
+                            <h3 class="text-xl font-bold text-secondary mb-1">Full-Stack Development</h3>
+                            <p class="text-gray-500 text-sm font-medium">Independent Architect</p>
+                        </div>
+                        <div class="md:w-2/3 border-l-2 border-white/10 pl-8 pb-4 relative group-hover:border-secondary transition-colors duration-500">
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-dark border-2 border-secondary rounded-full group-hover:bg-secondary transition-colors duration-500 shadow-[0_0_10px_rgba(255,0,85,0.5)]"></div>
+                            <p class="text-gray-300 leading-relaxed">Architecting robust digital solutions from database to frontend. Proficient in building dynamic web applications utilizing modern tech stacks including PHP, Laravel, and React. Focus on clean code, hybrid content management, and scalable architecture.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6 group cursor-interactable" data-aos="fade-up">
+                        <div class="md:w-1/3 md:text-right">
+                            <h3 class="text-xl font-bold text-purple-400 mb-1">Leadership & Diplomacy</h3>
+                            <p class="text-gray-500 text-sm font-medium">MUN & EWUMUNC</p>
+                        </div>
+                        <div class="md:w-2/3 border-l-2 border-transparent pl-8 relative">
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 bg-dark border-2 border-purple-400 rounded-full group-hover:bg-purple-400 transition-colors duration-500 shadow-[0_0_10px_rgba(192,132,252,0.5)]"></div>
+                            <p class="text-gray-300 leading-relaxed">Active participation in Model United Nations (MUN), fostering strong diplomatic, negotiation, and public speaking skills. Dedicated to expanding networks and stepping into leadership roles within university organizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 bg-card/50 border-t border-white/5 relative z-10">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="font-header text-4xl md:text-5xl font-black mb-16 text-center cursor-interactable">Tech <span class="text-accent">&</span> Tactics</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="cursor-interactable glass glass-card p-8 rounded-xl text-center flex flex-col items-center justify-center min-h-[180px]" data-aos="fade-up" data-aos-delay="0">
+                        <i class="fa-brands fa-laravel text-5xl text-red-500 mb-4 drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]"></i>
+                        <h3 class="font-bold text-lg text-white">PHP / Laravel</h3>
+                        <p class="text-xs text-gray-500 mt-2">Backend Architecture</p>
+                    </div>
+                    <div class="cursor-interactable glass glass-card p-8 rounded-xl text-center flex flex-col items-center justify-center min-h-[180px]" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fa-brands fa-react text-5xl text-blue-400 mb-4 drop-shadow-[0_0_8px_rgba(96,165,250,0.5)]"></i>
+                        <h3 class="font-bold text-lg text-white">React</h3>
+                        <p class="text-xs text-gray-500 mt-2">Frontend Engineering</p>
+                    </div>
+                    <div class="cursor-interactable glass glass-card p-8 rounded-xl text-center flex flex-col items-center justify-center min-h-[180px]" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fa-solid fa-truck-fast text-5xl text-emerald-400 mb-4 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]"></i>
+                        <h3 class="font-bold text-lg text-white">SCM & Logistics</h3>
+                        <p class="text-xs text-gray-500 mt-2">Operations & Strategy</p>
+                    </div>
+                    <div class="cursor-interactable glass glass-card p-8 rounded-xl text-center flex flex-col items-center justify-center min-h-[180px]" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fa-solid fa-palette text-5xl text-purple-400 mb-4 drop-shadow-[0_0_8px_rgba(192,132,252,0.5)]"></i>
+                        <h3 class="font-bold text-lg text-white">Design & Apparel</h3>
+                        <p class="text-xs text-gray-500 mt-2">DTF & Creative Assets</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-32 bg-fixed bg-center bg-cover relative bg-gradient-to-br from-dark via-[#0a192f] to-dark" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-dark/80 backdrop-blur-[2px]"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+                <div class="cursor-interactable w-20 h-20 mx-auto border-2 border-accent rounded-full flex items-center justify-center mb-8 bg-dark/50 shadow-[0_0_30px_rgba(0,242,234,0.3)]">
+                    <i class="fa-solid fa-gauge-high text-3xl text-accent"></i>
+                </div>
+                <h2 class="font-header text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight cursor-interactable">Driven by <span class="text-white">Precision</span></h2>
+                <p class="text-xl text-gray-300 leading-relaxed font-light cursor-interactable">
+                    Beyond databases and business logic, I possess a deep passion for automotive culture. The mechanics of driving inherently mirror the principles of Supply Chain Management and Coding—calculating risks, optimizing pathways, executing with accuracy, and maintaining absolute control at high velocities.
+                </p>
+            </div>
+        </section>
+
+        <section id="terminal-section" class="py-20 relative z-10 bg-dark overflow-hidden border-t border-white/10">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="cursor-interactable text-4xl md:text-5xl font-header font-black mb-6 text-center">Establish <span class="gradient-text animate-gradient-flow">Connection</span></h2>
+                <p class="cursor-interactable text-gray-400 mb-10 text-lg text-center">Use the terminal below to interface directly with my inbox.</p>
+                
+                <div class="w-full bg-[#050505] border border-white/10 rounded-lg shadow-2xl font-mono text-sm overflow-hidden cursor-interactable" onclick="document.getElementById('term-input').focus()">
+                    <div class="bg-[#1a1a1a] border-b border-white/10 px-4 py-2 flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span class="ml-2 text-gray-400 font-bold text-xs tracking-widest">root@sks-server:~</span>
+                    </div>
+                    <div class="p-6 h-64 overflow-y-auto flex flex-col" id="terminal-body">
+                        <p class="text-accent mb-1">> SKS System Protocol v2.0 initialized.</p>
+                        <p class="text-gray-300 mb-4">> Type <span class="text-secondary font-bold">'help'</span>, <span class="text-secondary font-bold">'contact'</span>, or <span class="text-secondary font-bold">'matrix'</span>.</p>
+                        <div id="terminal-output" class="text-gray-300 flex-1"></div>
+                        <div class="flex items-center text-gray-300 mt-2">
+                            <span class="text-accent mr-2 font-bold">guest@sks:~$</span>
+                            <input type="text" id="term-input" class="bg-transparent border-none outline-none flex-1 text-white shadow-none focus:ring-0 p-0 m-0" autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-8 text-gray-500 font-medium mt-12 text-sm">
+                    <a href="mailto:siamon.karim22@gmail.com" class="cursor-interactable hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-2 text-accent"></i> siamon.karim22@gmail.com</a>
+                    <a href="https://wa.me/8801788588266" target="_blank" rel="noopener noreferrer" class="cursor-interactable hover:text-white transition-colors"><i class="fa-brands fa-whatsapp mr-2 text-whatsapp"></i> +880 1788-588266</a>
+                </div>
+                
+                <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>
+                
+                <div class="cursor-interactable text-center text-gray-600 text-xs tracking-widest font-header uppercase">
+                    &copy; 2026 Somon Karim Siamon. Engineered with precision.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const projectData = {
+            'aquawrist': { title: 'Aquawrist', category: 'E-Commerce Platform', tags: ['Laravel', 'MySQL', 'Brand Management', 'Logistics'], challenge: 'Developing a premium digital storefront for a modern watch brand that required seamless inventory tracking, a high-end user interface, and robust supply chain integration for order fulfillment.', architecture: 'Built a customized e-commerce flow utilizing PHP/Laravel backend architecture to handle database relationships securely. The system integrates real-time inventory adjustments and a streamlined checkout process.', link: 'https://aquawrist.fromrejected.com', icon: 'fa-stopwatch' },
+            'belasheshe': { title: 'বেলা শেষে (Bela Sheshe)', category: 'Digital News Portal', tags: ['PHP 8+', 'Web Crawler', 'Hybrid CMS', 'Media'], challenge: 'Creating a production-ready news platform that required both manual editorial publishing capabilities and an automated system to crawl, fetch, and display real-time news from various sources.', architecture: 'Engineered a modular, object-oriented PHP architecture. Developed a custom web scraping utility that runs via cron jobs to aggregate data, funneling it into a SQLite/MySQL hybrid database for high-speed content delivery.', link: 'https://flusso.fromrejected.com', icon: 'fa-newspaper' },
+            'astro': { title: 'Astro', category: 'Zodiac & Astronomy Engine', tags: ['React', 'API Integration', 'Data Visualization'], challenge: 'Building a dual-system astrological platform capable of instantly calculating and presenting highly specific user data for both standard Astronomical profiles and Chinese Zodiac charts.', architecture: 'Utilized frontend frameworks connected to specialized RESTful APIs to handle complex date/time calculations algorithmically, presenting the resulting data through a clean, interactive user interface.', link: 'https://astro.fromrejected.com', icon: 'fa-meteor' },
+            'slotshots': { title: 'SlotShots', category: 'Apparel Branding & DTF', tags: ['Logistics', 'Supply Chain', 'E-Commerce', 'Print Tech'], challenge: 'Launching and managing the logistics for a high-weight (220+ GSM) apparel brand requiring wide-format Direct-to-Film (DTF) printing specifications and nationwide shipping coordination.', architecture: 'Designed the digital branding portal while physically architecting the supply chain flow—from securing raw materials to finalizing custom print specs and integrating an e-commerce storefront for direct consumer sales.', link: 'https://slotshots.fromrejected.com', icon: 'fa-shirt' }
+        };
+
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx;
+        function initAudio() {
+            if(!audioCtx) audioCtx = new AudioContext();
+            if(audioCtx.state === 'suspended') audioCtx.resume();
+        }
+        document.addEventListener('click', initAudio, {once:true});
+        document.addEventListener('keydown', initAudio, {once:true});
+
+        function playHoverSound() {
+            if(!audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator(); const gainNode = audioCtx.createGain();
+                osc.type = 'sine'; osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(300, audioCtx.currentTime + 0.1);
+                gainNode.gain.setValueAtTime(0.015, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+                osc.connect(gainNode); gainNode.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.1);
+            } catch(e) {}
+        }
+
+        function playClickSound() {
+            if(!audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator(); const gainNode = audioCtx.createGain();
+                osc.type = 'square'; osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(50, audioCtx.currentTime + 0.2);
+                gainNode.gain.setValueAtTime(0.03, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.2);
+                osc.connect(gainNode); gainNode.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + 0.2);
+            } catch(e) {}
+        }
+
+        function updateTelemetry() {
+            const now = new Date();
+            const dhakaTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Dhaka"}));
+            const hours = dhakaTime.getHours();
+            const mins = dhakaTime.getMinutes().toString().padStart(2, '0');
+            
+            let statusText = "🟢 System Active"; let statusIcon = "🟢";
+            if(hours >= 9 && hours < 16) { statusText = "Campus & Lectures @ EWU"; statusIcon = "🟡"; } 
+            else if(hours >= 16 && hours < 23) { statusText = "Development & Operations"; statusIcon = "🟢"; } 
+            else { statusText = "Deep Work & Architecture Mode"; statusIcon = "🟣"; }
+
+            document.getElementById('telemetry-time').innerText = `${hours.toString().padStart(2, '0')}:${mins} BST`;
+            document.getElementById('telemetry-status').innerText = `${statusIcon} ${statusText}`;
+        }
+        setInterval(updateTelemetry, 30000); updateTelemetry();
+
+        const modal = document.getElementById('project-modal');
+        const modalCard = document.getElementById('modal-card');
+
+        function openModal(projectId) {
+            const data = projectData[projectId];
+            if(!data) return;
+            playClickSound();
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-category').innerText = data.category;
+            document.getElementById('modal-challenge').innerText = data.challenge;
+            document.getElementById('modal-architecture').innerText = data.architecture;
+            document.getElementById('modal-link').href = data.link;
+            document.getElementById('modal-icon').className = `fa-solid ${data.icon} text-6xl text-white/20 mb-6 text-center group-hover:text-white/40 transition-colors`;
+            const tagsContainer = document.getElementById('modal-tags');
+            tagsContainer.innerHTML = '';
+            data.tags.forEach(tag => { tagsContainer.innerHTML += `<span class="text-xs bg-white/10 border border-white/20 px-3 py-1 rounded-full text-white">${tag}</span>`; });
+
+            modal.classList.remove('hidden');
+            document.body.classList.add('modal-open');
+            requestAnimationFrame(() => {
+                modal.classList.remove('opacity-0');
+                modalCard.classList.remove('hidden');
+                modalCard.classList.add('animate-modal-up');
+            });
+        }
+
+        function closeModal() {
+            playClickSound();
+            modal.classList.add('opacity-0');
+            modalCard.classList.remove('animate-modal-up');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modalCard.classList.add('hidden');
+                document.body.classList.remove('modal-open');
+            }, 300);
+        }
+
+        AOS.init({ duration: 800, offset: 100, once: true, easing: 'ease-out-cubic' });
+        
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(() => {
+                preloader.style.opacity = '0'; preloader.style.visibility = 'hidden';
+                setTimeout(() => { preloader.remove(); }, 600); 
+            }, 1600); 
+        });
+
+        let scrollTicking = false;
+        window.addEventListener('scroll', () => {
+            if (!scrollTicking) {
+                window.requestAnimationFrame(() => {
+                    const scrollPx = document.documentElement.scrollTop;
+                    const winHeightPx = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    document.getElementById('scroll-progress').style.width = `${(scrollPx / winHeightPx) * 100}%`;
+                    scrollTicking = false;
+                });
+                scrollTicking = true;
+            }
+        }, { passive: true });
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+            let mouseX = 0, mouseY = 0;
+            let cursorTicking = false;
+
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX; mouseY = e.clientY;
+                if (!cursorTicking) {
+                    window.requestAnimationFrame(() => {
+                        cursorDot.style.transform = `translate3d(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%), 0)`;
+                        cursorOutline.animate({ transform: `translate3d(calc(${mouseX}px - 50%), calc(${mouseY}px - 50%), 0)` }, { duration: 150, fill: "forwards" });
+                        cursorTicking = false;
+                    });
+                    cursorTicking = true;
+                }
+            }, { passive: true });
+
+            document.querySelectorAll('.cursor-interactable').forEach(el => {
+                el.addEventListener('mouseenter', () => { document.body.classList.add('cursor-hover-active'); playHoverSound(); }, { passive: true });
+                el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover-active'), { passive: true });
+                el.addEventListener('click', () => { if(el.tagName !== 'DIV') playClickSound(); }, { passive: true });
+            });
+
+            const tiltElements = document.querySelectorAll('.js-tilt');
+            tiltElements.forEach(el => {
+                let tiltTicking = false;
+                el.addEventListener('mousemove', (e) => {
+                    if (!tiltTicking) {
+                        window.requestAnimationFrame(() => {
+                            const rect = el.getBoundingClientRect();
+                            const x = e.clientX - rect.left; 
+                            const y = e.clientY - rect.top;  
+                            const centerX = rect.width / 2;
+                            const centerY = rect.height / 2;
+                            const rotateX = ((y - centerY) / centerY) * -12;
+                            const rotateY = ((x - centerX) / centerX) * 12;
+                            el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                            tiltTicking = false;
+                        });
+                        tiltTicking = true;
+                    }
+                }, { passive: true });
+                el.addEventListener('mouseleave', () => {
+                    el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+                }, { passive: true });
+            });
+        }
+
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        let matrixInterval;
+
+        function startMatrix() {
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            const letters = 'SKS011001ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+            const fontSize = 16; const columns = canvas.width / fontSize;
+            const drops = []; for(let i = 0; i < columns; i++) drops[i] = 1;
+
+            canvas.classList.remove('hidden');
+            setTimeout(() => canvas.style.opacity = '1', 50);
+
+            if(matrixInterval) clearInterval(matrixInterval);
+            matrixInterval = setInterval(() => {
+                ctx.fillStyle = 'rgba(5, 5, 5, 0.1)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.font = fontSize + 'px monospace';
+                for(let i = 0; i < drops.length; i++) {
+                    const text = letters[Math.floor(Math.random() * letters.length)];
+                    ctx.fillStyle = Math.random() > 0.5 ? '#00f2ea' : '#ff0055'; 
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                    drops[i]++;
+                }
+            }, 33);
+
+            setTimeout(() => {
+                canvas.style.opacity = '0';
+                setTimeout(() => { canvas.classList.add('hidden'); clearInterval(matrixInterval); }, 1000);
+            }, 7000);
+        }
+
+        const termInput = document.getElementById('term-input');
+        const termOutput = document.getElementById('terminal-output');
+        const termBody = document.getElementById('terminal-body');
+        let terminalState = 'idle';
+
+        function printToTerminal(text, isCommand = false) {
+            const p = document.createElement('p'); p.className = 'mb-1';
+            if(isCommand) p.innerHTML = `<span class="text-accent mr-2">guest@sks:~$</span> ${text}`;
+            else p.innerHTML = text;
+            termOutput.appendChild(p); termBody.scrollTop = termBody.scrollHeight;
+        }
+
+        termInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                playClickSound();
+                const val = this.value.trim(); this.value = '';
+                if(val === '') return;
+                printToTerminal(val, true);
+
+                if (terminalState === 'contacting') {
+                    printToTerminal(`<span class="text-accent">> Launching secure mail client...</span>`);
+                    setTimeout(() => {
+                        window.location.href = `mailto:siamon.karim22@gmail.com?subject=Terminal Inquiry&body=${encodeURIComponent(val)}`;
+                        printToTerminal(`<span class="text-green-400">> Message parsed successfully. Awaiting client dispatch.</span>`);
+                        terminalState = 'idle';
+                    }, 800);
+                    return;
+                }
+
+                switch(val.toLowerCase()) {
+                    case 'help': printToTerminal(`<span class="text-secondary">Commands available:</span><br>- <span class="text-accent">about</span>   : Display architect data<br>- <span class="text-accent">contact</span> : Initialize messaging protocol<br>- <span class="text-accent">matrix</span>  : System override<br>- <span class="text-accent">clear</span>   : Clear terminal window<br>- <span class="text-accent">sudo</span>    : Execute root privileges`); break;
+                    case 'about': printToTerminal(`Somon Karim Siamon. Full-Stack Developer & Supply Chain Strategist at East West University. Building hybrid CMS systems and optimizing logistics.`); break;
+                    case 'contact': terminalState = 'contacting'; printToTerminal(`Please type your message and press Enter. This will bridge to your native mail client.`); break;
+                    case 'matrix': case 'override': printToTerminal(`<span class="text-accent">> Overriding mainframe visual parameters...</span>`); startMatrix(); break;
+                    case 'clear': termOutput.innerHTML = ''; break;
+                    case 'sudo': printToTerminal(`<span class="text-red-500">Access Denied. This incident will be reported.</span>`); break;
+                    default: printToTerminal(`Command not found: ${val}. Type 'help' for available commands.`);
+                }
+            }
+        });
+
+        console.log("%c SKS. %c \n\nYo, developer! I see you looking under the hood. \nIf you're reading this, we should connect. \n\nEmail: siamon.karim22@gmail.com \n", "color: #00f2ea; font-size: 50px; font-weight: bold; text-shadow: 0 0 10px #ff0055;", "color: #e5e5e5; font-size: 14px;");
+        console.log("%c\"I am not going to die. I will survive no matter what!\" - Ichigo Kurosaki", "color: #ff0055; font-style: italic;");
+    </script>
+</body>
+</html>
